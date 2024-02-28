@@ -10,7 +10,6 @@ const Currency = () => {
             payload: event.target.value,
         });
     }
-
     return (
         <div className=' alert currency' style={{backgroundColor: "lightgreen"}}>
         <span style={{color: 'white'}}> Currency: </span>
