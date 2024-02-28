@@ -12,14 +12,16 @@ const Currency = () => {
     }
     return (
         <div className=' alert currency' style={{backgroundColor: "lightgreen"}}>
-        <span style={{color: 'white'}}> Currency: </span>
-            <select style={{backgroundColor: "lightgreen", border:"none"}} onChange={handleCurrencyChange}>
-                <option value="$">$ Dollar</option>
-                <option value="£" selected> £ Pound</option>
-                <option value="€" > € Euro</option>
-                <option value="₹"> ₹ Ruppee</option>
+        <label style={{marginLeft: '1rem' , backgroundColor:'lightgreen', color:'white'}}> Currency
+            <select style={{backgroundColor: "lightgreen", color:'white', border:"none", marginLeft: '1rem', }} onChange={handleCurrencyChange}>
+                <option style={{color:'black'}} value="$">$ Dollar</option>
+                <option style={{color:'black'}} value="£" selected> £ Pound</option>
+                <option style={{color:'black'}} value="€" > € Euro</option>
+                <option style={{color:'black'}} value="₹"> ₹ Ruppee</option>
             </select>
+        </label>
         </div>
             );
 };
 export default Currency;
+
